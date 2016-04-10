@@ -12,6 +12,8 @@
     "gulp": "^3.9.1",
     "gulp-sass": "^2.2.0",
     "gulp-serve": "^1.2.0",
-    "gulp-webserver": "^0.9.1"
+    "gulp-webserver": "^0.9.1",
+    "jquery": "^2.2.3",
+    "jquery.transit": "^0.9.12"
   }
 }
