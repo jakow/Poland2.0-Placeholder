@@ -1,0 +1,16 @@
+{
+  "name": "poland2.0-placeholder",
+  "version": "1.0.0",
+  "description": "Strona w budowie",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jakub Kowalczyk",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-serve": "^1.2.0",
+    "gulp-webserver": "^0.9.1"
+  }
+}
