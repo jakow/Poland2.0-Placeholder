@@ -88,14 +88,19 @@ animation-timing-function: cubic-bezier(0.8, -0.5, 0, 1);
 
 }
 
-#ed {
-  background-image: url('Edynburaki.png');
+.ed {
+  background-image: url('Edynburaki_420.png');
   position: absolute;
+  display: none;
   background-color:white;
   height: 420px;
   width:420px;
   border-radius: 240px;
-  left: 50%;
+  left: -420px;
   top: 4rem;
-  margin-left: -210px;
+  transition: transform 2s ease-in-out;
 }
+  // .animate {
+  //   display: block;
+  //   transform: translateX(calc(100vw + 420px)) rotate(360deg);
+  // }
