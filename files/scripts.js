@@ -1,22 +1,32 @@
-kon = function() {
+'use strict';
+
+var kon = function() {
 	$("#ed")
 	.css({
 		display: 'block',
-		// transform: 'translateX(calc(100vw + 420px)) rotate(360deg)',
-		
 	})
 	.transition({
-		//translate: ['100vw + 420px',0],
+		translate: ['calc(100vw + 420px)', 0],
 		rotate: '360deg',
 		duration: 2000,
-	})
-	.delay(2000).queue(function(next){
-	    $(this)
-	 //    .css("display", "none")
-		// .css("transform", "initial")
-	    next();
-	});
+		easing: 'ease-in-out'
+	}, function() {
+	    $(this).css({
+				display: 'none'
+			})
+			.transition({
+				translate: [0, 0],
+				rotate: '0',
+				duration: 0,
+			})
+		})
 }
+
+$(document).ready(function() {
+var	ed = document.createElement('div');
+ed.id = 'ed';
+$('body').append(ed);
+
 
 var easter_egg = new Konami(kon);
 
@@ -31,3 +41,4 @@ var easter_egg = new Konami(kon);
 // $("#box").css({ perspective: 100, rotateX: 30 }); // Webkit 3d rotation
 // $("#box").css({ rotateY: 30 });
 // $("#box").css({ rotate3d: [1, 1, 0, 45] });
+});

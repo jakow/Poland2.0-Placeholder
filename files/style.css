@@ -80,7 +80,7 @@ a {
   100% {
     transform: rotate(0deg); } }
 
-.ed {
+#ed {
   background-image: url("Edynburaki_420.png");
   position: absolute;
   display: none;
@@ -89,5 +89,4 @@ a {
   width: 420px;
   border-radius: 240px;
   left: -420px;
-  top: 4rem;
-  transition: transform 2s ease-in-out; }
+  bottom: 0; }

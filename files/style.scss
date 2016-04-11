@@ -97,8 +97,8 @@ animation-timing-function: cubic-bezier(0.8, -0.5, 0, 1);
   width:420px;
   border-radius: 240px;
   left: -420px;
-  top: 4rem;
-  transition: transform 2s ease-in-out;
+  bottom: 0;
+  //transition: transform 2s ease-in-out;
 }
   // .animate {
   //   display: block;
